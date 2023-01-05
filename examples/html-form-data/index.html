@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="./style.css" /> -->
+  </head>
+
+  <body>
+    <form id="example-form">
+      <div>
+        <label>API URL</label>
+        <input name="apiEndpoint" type="text" />
+      </div>
+
+      <div>
+        <label>Username</label>
+        <input name="apiUser" type="text" />
+      </div>
+
+      <div>
+        <label>Password</label>
+        <input name="apiPwd" type="password" />
+        <button
+          type="button"
+          id="showHidePwdBtn"
+          class="float-right relative top-[-1.55rem] right-[0.25rem] text-black outline-none focus:outline-none focus:text-orange-ncma transition-all duration-300"
+        >
+          Show/Hide
+        </button>
+      </div>
+
+      <div>
+        <label>Cultural association (select)</label>
+        <select name="CulturalAssociation">
+          <option value="">--Please choose an option--</option>
+          <option value="african">African</option>
+          <option value="european">European</option>
+          <option value="judaic">Judaic</option>
+        </select>
+      </div>
+
+      <div>
+        <!--- Could use <input type="checkbox"> -->
+        <label>Yes or no? (select) </label>
+        <select name="BooleanOption" id="form-input-RecurringFetch">
+          <option value="">--Please choose an option--</option>
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </div>
+
+      <!-- for hidden submission data like a uuid -->
+      <input
+        name="secret"
+        type="hidden"
+        value="1b3a9374-1a8e-434e-90ab-21aa7b9b80e7"
+      />
+
+      <button id="form-submit-btn" type="submit"> Submit </button>
+    </form>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
