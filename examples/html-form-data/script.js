@@ -1,7 +1,7 @@
 // Show/Hide password input button
 
-const showHidePwdBtn = document.getElementById("showHidePwdBtn");
-const passwordField = document.getElementById("form-input-APIServiceAccountPW");
+const showHidePwdBtn = document.getElementById("show-hide-pwd-btn");
+const passwordField = document.getElementById("api-pwd-field");
 
 showHidePwdBtn.onclick = function () {
   if (passwordField.type == "password") {
