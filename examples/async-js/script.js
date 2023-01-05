@@ -20,16 +20,17 @@ const delayTestCB = (cb) =>
 delayTestCB(() => console.log("done - callback hell"));
 
 /**********************************************************************
- * Promises - asynchronous king:
+ * Promises - asynchronous king
  **********************************************************************/
+
+// See Promise() construtor on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/Promise
 
 // wrap the cumbersome setTimeout callback
 const delayPromise = (ms) =>
   // create a promise
+  // we only need resolve, no issues expected
   new Promise(
-    (
-      resolve // we only need resolve, no issues expected
-    ) => setTimeout(resolve, ms) // the callback calls the promise resolution
+    (resolve) => setTimeout(resolve, ms) // the callback calls the promise resolution
   );
 
 // common promise "then" chain
@@ -47,12 +48,13 @@ const delayTestPromise = () =>
 delayTestPromise().then(() => console.log("done - promise"));
 
 /**********************************************************************
- * Async/await - Promises' more put together sister:
+ * Async/await - Promises' more put together sister
  **********************************************************************/
 
 // our async
 // note, we've really just wrapped our promise
 // because that's at the heart of it all
+// (this is the same as above but with async/await applied)
 const delayAA = async (ms) =>
   await new Promise((resolve) => setTimeout(resolve, ms));
 
