@@ -1,5 +1,5 @@
 Examples to add:
 Word count
-Idle timer - second tier
+Idle timer - second tier (refactoring?)
 Fetch local .json
 Youtube, Vimeo APIs?
