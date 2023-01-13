@@ -1,4 +1,4 @@
-import { idleTimer } from "./idle-timer.js";
+import { idleTimer } from "./idle-timer-singleton.js";
 
 const setupButton = document.getElementById("setupBtn");
 const removeButton = document.getElementById("removeBtn");
